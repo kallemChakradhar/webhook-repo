@@ -24,7 +24,7 @@ async function fetchEvents() {
             div.className = "event";
             div.innerHTML = `<span class="badge ${typeClass}">${item.type}</span> ${item.message}`;
 
-            container.append(div); // ✅ latest already sorted from backend
+            container.append(div); //latest already sorted from backend
         });
 
     } catch (err) {
