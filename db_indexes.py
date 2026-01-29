@@ -6,6 +6,6 @@ try:
         [("request_id", 1), ("action", 1), ("timestamp", 1)],
         unique=True
     )
-    print("✅ MongoDB indexes created successfully")
+    print("MongoDB indexes created successfully")
 except Exception as e:
-    print("⚠️ Index already exists or duplicates found:", e)
+    print("Index already exists or duplicates found:", e)
