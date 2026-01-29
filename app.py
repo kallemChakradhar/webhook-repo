@@ -36,7 +36,7 @@ def get_events():
             return ca
         return datetime.min
 
-    # ✅ SAFE SORTING (latest first)
+    #SAFE SORTING (latest first)
     events.sort(
         key=lambda e: (
             safe_time(e),
