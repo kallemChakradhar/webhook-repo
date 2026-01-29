@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+    padding: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* Event Card */
+.event {
+    background: #020617;
+    border-left: 5px solid #22c55e;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 1.6;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.01);
+}
+
+/* Badge */
+.badge {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-right: 8px;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 110px;
+    text-align: center;
+}
+
+/* Colors */
+.push {
+    background: #22c55e;
+    color: black;
+}
+
+.pr {
+    background: #3b82f6;
+    color: white;
+}
+
+.merge {
+    background: #f59e0b;
+    color: black;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
