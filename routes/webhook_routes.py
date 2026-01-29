@@ -30,8 +30,8 @@ def github_webhook():
     try:
         event_doc = build_event(data)
         collection.insert_one(event_doc)
-        print("✅ Event stored")
+        print("Event stored")
     except Exception:
-        print("⚠️ Duplicate ignored")
+        print("Duplicate ignored")
 
     return jsonify({"message": "Webhook processed"}), 200
