@@ -10,4 +10,4 @@ client = MongoClient(MONGO_URI)
 db = client["github_webhooks"]
 collection = db["events"]
 
-print("✅ MongoDB Connected Successfully")
+print("MongoDB Connected Successfully")
